@@ -1,0 +1,14 @@
+{
+  "name": "crazy-guys-dance-academy",
+  "version": "1.0.0",
+  "description": "This is a website for a popular Dance academy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karthik shetty",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

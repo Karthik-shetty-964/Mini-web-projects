@@ -1,0 +1,231 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:50px;
+}
+
+/* Navigation bar */
+.navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+/*Navigation bar: Logo and image */
+#logo{
+    margin: 8px 14px;
+}
+#logo img{
+    width: 84px;
+    height: 63px;
+    margin: 4px 2px;
+    border-radius: 100%;
+}
+/* Navigation bar:List items */
+.navbar ul{
+       display: flex;
+    }
+.navbar::before{
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index:-1;
+      opacity: 2;
+    }
+.navbar ul li{
+    list-style: none;
+    margin: 4px 8px;
+    /* text-decoration: none; */
+}
+.navbar ul li a{
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 6px 23px;
+        border-radius: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: bold;
+}
+.navbar ul li a:hover{
+           color: black;
+           background-color: white;
+           text-decoration: underline;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    height: 428px;
+    flex-direction: column;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left:0px;
+    background-color: black;
+    background: url('./Food_delivery_images/pic2.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 425px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin: 19px;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+ 
+/* services section */
+#services{
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    padding: 0px 30px;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    /* display: flex; */
+    margin: 11px 13px;
+    padding: 5px;
+    background-color: #f6f4f4;
+    border-radius: 34px;
+    width: 500px;
+
+}   
+#services .box img{
+    height:150px;
+    border-radius: 112px;
+
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Clients section */
+#client-section{
+      /* height: 269px; */
+      position: relative;
+      margin: 22px 0px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/Food_delivery_images/img3.jpg')no-repeat center center/cover;
+    width: 100%;
+    height:103%;
+    z-index: -3;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding:34px;
+}
+#clients img{
+    height: 100px;
+    border-radius: 100%;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+    height: 500px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('/Food_delivery_images/contact-img1.jpg')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1 rem;
+    font-family: 'Bree Serif', serif;
+}
+/* utility classes */
+.h-primary{
+    font-size: 1.2rem;
+    padding:12px 20px;
+    margin: 0px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding:0px 20px ;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    padding: 2px 9px;
+    font-size: 20px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.center{
+    font-size: 2.2rem;
+    text-align: center;
+}
+/* footer section */
+footer{
+    background-color:black ;
+    color: white;
+    padding: 5px 20px;
+}
+.footer{
+    font-size: 1rem;
+    text-align: center;
+}

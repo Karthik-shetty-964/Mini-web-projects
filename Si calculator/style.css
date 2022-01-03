@@ -1,0 +1,27 @@
+.container{
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* text-align: center; */
+    margin: auto;
+    /* position: absolute;
+    left: 50%; */
+    /* margin: 101px 98px 119px 0; */
+}
+
+input{
+    display: inline;
+    margin: 10px;
+    /* line-height: 16px; */
+    width: 468px;
+    height: 39px;
+    font-size: 22px;;
+}
+button{
+    display: inline;
+    margin: 10px;
+    /* line-height: 16px; */
+    width: 468px;
+    height: 39px;
+    font-size: 22px;
+}

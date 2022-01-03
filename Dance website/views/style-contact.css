@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navbar li a{
+    font-family: 'Sansita Swashed', cursive;
+}
+#contact{
+   height: 100%;
+   width: 100%;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 727px;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    background: url('../static/contact.jpg')no-repeat center center/cover;
+    z-index: -1;
+     opacity:0.6;
+}
+#contact h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 16px;
+    font-family: 'Sansita Swashed', cursive;
+    color:black;
+ 
+}
+ form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 15px;
+}
+input,textarea{
+    width: 582px;
+    margin: 0px 5px;
+    padding: 10px 6px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+}
+#btn{
+    border: 2px solid black;
+    padding: 4px 18px;
+    font-size: 17px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #ff6262;
+    margin-bottom: 40px;
+    margin-top: 7px;
+    cursor: pointer;
+}

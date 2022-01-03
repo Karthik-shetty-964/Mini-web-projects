@@ -1,0 +1,148 @@
+/* we can either import url in css like this or we can import in html using link */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    background-color: #cf686c;
+    font-family: 'Sansita Swashed', cursive;
+    display: flex;
+    width: 100%;
+    height: 96px;
+    padding: 6px 41px;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+}
+#logo:hover{
+    filter:invert();
+}
+#logo img{
+    height: 63px;
+    width: 73px;
+    border-radius: 26%;;
+    /* This will convert whatver in white into black when invert(1) and vice versa when invert(0) */
+    /* filter: invert(1);*/
+} 
+#logo h1{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+#navbar ul{
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 28px 18px;;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 5px 29px;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+#navbar li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+
+#introsection{
+    color: white;
+    height: 396px;
+    background-color: red;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: url(/static/photo-1483931430372-226f194be3a5.jfif)no-repeat center center/cover;
+    z-index: -1;
+    font-size: 39px;
+    padding: 118px 0px
+}
+#introsection h5{
+    padding: 5px;
+}
+#missionsection{
+    height: 326px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#missionsection h3{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 22px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    border: 2px solid black;
+    display: inline-block;
+    width: 463px;
+    height: 217px;
+    margin: 37px 14px;
+    border-radius: 27px;
+    /* background-color: #f6efef; */
+  
+}
+.card h4{
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.card h4:hover{
+    text-decoration: underline;
+}
+.card img{
+    height: 135px;
+    width: 141px;
+    float: right;
+    border-radius: 100%;
+}
+.content{
+    font-size: 15px;
+    padding: 14px 18px;
+}
+#sponsorsection{
+    height: 300px;
+    background-color:#ff7278;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+#sponsorsection h3{
+    text-align: center;
+    font-size: 33px;
+}
+.sponsor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor img{
+    height: 121px;
+    width: 125px;
+    margin: 10px 43px;
+    border-radius: 100%
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+
+}

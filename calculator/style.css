@@ -1,0 +1,28 @@
+.container{
+    margin: 73px 409px;
+    border: 2px solid black;
+    padding: 24px 16px;
+    background-color: #585757;
+}
+input[type="text" i]{
+    height: 60px;
+    width: 640px;
+    border: 2px solid black;
+    font-size: 50PX;
+}
+
+button{
+    margin: 7px 5px;
+    height: 52px;
+    width: 81px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+tr,button{
+    font-size: 20px;
+}
